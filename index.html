@@ -7,118 +7,187 @@
     <!-- AOS CSS -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
 <body>
-    <header class="hero">
-        <div class="header-content">
-            <img src="assets/logo.png" alt="Tetenu Analytics Logo" class="logo">
-            <div>
-                <h1 style="margin:0; font-size:1.5em;">Tetenu Analytics</h1>
-                <span class="tagline">Strategic Insights, Sustainable Growth</span>
-                <nav>
-                    <ul>
-                        <li><a href="#mission">Mission</a></li>
-                        <li><a href="#services">Core Services</a></li>
-                        <li><a href="#reasons">Why Choose Us</a></li>
-                        <li><a href="#commitment">Our Commitment</a></li>
-                    </ul>
-                </nav>
+    <header class="hero py-3 py-md-4 position-fixed top-0 w-100 bg-white shadow" style="z-index: 1050;">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <div class="header-content d-flex flex-column flex-lg-row align-items-center justify-content-between">
+                        <!-- Logo and Title Section -->
+                        <div class="d-flex align-items-center mb-2 mb-lg-0">
+                            <!-- <img src="assets/logo.png" alt="Tetenu Analytics Logo" class="logo me-3" style="height: 50px; width: auto;"> -->
+                            <div class="text-center text-lg-start">
+                                <h1 class="mb-1 fs-4 fs-md-3">Tetenu Analytics</h1>
+                                <span class="tagline small">Strategic Insights, Sustainable Growth</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Navigation Section -->
+                        <nav class="navbar navbar-expand-lg p-0">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item"><a class="nav-link px-2 px-lg-3" href="#mission">Mission</a></li>
+                                    <li class="nav-item"><a class="nav-link px-2 px-lg-3" href="#services">Core Services</a></li>
+                                    <li class="nav-item"><a class="nav-link px-2 px-lg-3" href="#reasons">Why Choose Us</a></li>
+                                    <li class="nav-item"><a class="nav-link px-2 px-lg-3" href="#commitment">Our Commitment</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
 
     <main>
-        <section id="mission" class="section-bg" data-aos="fade-up">
-            <div class="section-content">
-                <div>
-                    <h2>Our Mission</h2>
-                    <p>To empower businesses in Zimbabwe and beyond with data-driven intelligence, operational excellence, and innovative digital solutions — unlocking sustainable growth through local expertise.</p>
+        <section id="mission" class="section-bg py-5" data-aos="fade-up">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10 col-xl-8">
+                        <div class="section-content text-center">
+                            <h2 class="mb-4 display-5">Our Mission</h2>
+                            <p class="lead">To empower businesses in Zimbabwe and beyond with data-driven intelligence, operational excellence, and innovative digital solutions — unlocking sustainable growth through local expertise.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="services" class="section-bg-alt" data-aos="fade-up">
-            <div class="services-grid">
-                <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
-                    <img src="assets/research.jpg" alt="Research & Business Intelligence">
-                    <h3>Research & Business Intelligence</h3>
-                    <ul>
-                        <li>Market insights & competitive analysis</li>
-                        <li>Predictive analytics & trend forecasting</li>
-                        <li>Customized data visualization dashboards</li>
-                    </ul>
+        <section id="services" class="section-bg-alt py-5" data-aos="fade-up">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-12 text-center">
+                        <h2 class="display-5 mb-4">Core Services</h2>
+                    </div>
                 </div>
-                <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
-                    <img src="assets/operations.jpg" alt="Operations Management">
-                    <h3>Operations Management</h3>
-                    <ul>
-                        <li>Inventory optimization & supply chain tracking</li>
-                        <li>Automated order processing systems</li>
-                        <li>Integrated payroll & HR solutions</li>
-                    </ul>
-                </div>
-                <div class="service-card" data-aos="zoom-in" data-aos-delay="300">
-                    <img src="assets/landuse.jpg" alt="Land Use Plan Management">
-                    <h3>Land Use Plan Management</h3>
-                    <ul>
-                        <li>Agricultural/commercial land development strategies</li>
-                        <li>Zoning compliance & sustainability planning</li>
-                        <li>GIS mapping & resource allocation</li>
-                    </ul>
-                </div>
-                <div class="service-card" data-aos="zoom-in" data-aos-delay="400">
-                    <img src="assets/digital.jpg" alt="Digital Marketing & Web Management">
-                    <h3>Digital Marketing & Web Management</h3>
-                    <ul>
-                        <li>SEO/SEM & social media campaign management</li>
-                        <li>Website development & UX optimization</li>
-                        <li>Brand strategy & online reputation management</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="reasons" class="section-bg" data-aos="fade-up">
-            <h2>Why Choose Tetenu Analytics?</h2>
-            <div class="reasons-grid">
-                <div class="reason-card" data-aos="flip-left" data-aos-delay="100">
-                    <span class="reason-icon">🌍</span>
-                    <h3>Local Expertise, Global Standards</h3>
-                    <p>Deep understanding of Zimbabwean markets</p>
-                </div>
-                <div class="reason-card" data-aos="flip-left" data-aos-delay="200">
-                    <span class="reason-icon">🎯</span>
-                    <h3>Tailored Solutions</h3>
-                    <p>Bespoke strategies aligned with your business goals</p>
-                </div>
-                <div class="reason-card" data-aos="flip-left" data-aos-delay="300">
-                    <span class="reason-icon">⏱️</span>
-                    <h3>Efficiency Guaranteed</h3>
-                    <p>On-time delivery & measurable results</p>
-                </div>
-                <div class="reason-card" data-aos="flip-left" data-aos-delay="400">
-                    <span class="reason-icon">🚀</span>
-                    <h3>Future-Focused Innovation</h3>
-                    <p>Leveraging technology for sustainable impact</p>
+                <div class="row g-4">
+                    <div class="col-12 col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="service-card h-100 card border-0 shadow-sm">
+                            <div class="card-body text-center">
+                                <img src="assets/research.jpg" alt="Research & Business Intelligence" class="img-fluid mb-3 rounded">
+                                <h3 class="card-title h5">Research & Business Intelligence</h3>
+                                <ul class="list-unstyled text-start">
+                                    <li class="mb-2">• Market insights & competitive analysis</li>
+                                    <li class="mb-2">• Predictive analytics & trend forecasting</li>
+                                    <li class="mb-2">• Customized data visualization dashboards</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="service-card h-100 card border-0 shadow-sm">
+                            <div class="card-body text-center">
+                                <img src="assets/operations.jpg" alt="Operations Management" class="img-fluid mb-3 rounded">
+                                <h3 class="card-title h5">Operations Management</h3>
+                                <ul class="list-unstyled text-start">
+                                    <li class="mb-2">• Inventory optimization & supply chain tracking</li>
+                                    <li class="mb-2">• Automated order processing systems</li>
+                                    <li class="mb-2">• Integrated payroll & HR solutions</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="service-card h-100 card border-0 shadow-sm">
+                            <div class="card-body text-center">
+                                <img src="assets/landuse.jpg" alt="Land Use Plan Management" class="img-fluid mb-3 rounded">
+                                <h3 class="card-title h5">Land Use Plan Management</h3>
+                                <ul class="list-unstyled text-start">
+                                    <li class="mb-2">• Agricultural/commercial land development strategies</li>
+                                    <li class="mb-2">• Zoning compliance & sustainability planning</li>
+                                    <li class="mb-2">• GIS mapping & resource allocation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="service-card h-100 card border-0 shadow-sm">
+                            <div class="card-body text-center">
+                                <img src="assets/operations.jpg" alt="Digital Marketing & Web Management" class="img-fluid mb-3 rounded">
+                                <h3 class="card-title h5">Digital Marketing & Web Management</h3>
+                                <ul class="list-unstyled text-start">
+                                    <li class="mb-2">• SEO/SEM & social media campaign management</li>
+                                    <li class="mb-2">• Website development & UX optimization</li>
+                                    <li class="mb-2">• Brand strategy & online reputation management</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="commitment" class="section-bg-alt commitment-section" data-aos="fade-up">
-            <div class="commitment-card" data-aos="zoom-in">
-                <span class="commitment-icon">💡</span>
-                <h2>Our Commitment</h2>
-                <p>
-                    We transform data into decisions, complexity into clarity, and vision into value.<br>
-                    <strong>Partner with Tetenu Analytics to build a resilient, data-empowered future.</strong>
-                </p>
+        <section id="reasons" class="section-bg py-5" data-aos="fade-up">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-12 text-center">
+                        <h2 class="display-5 mb-4">Why Choose Tetenu Analytics?</h2>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-12 col-sm-6 col-lg-3" data-aos="flip-left" data-aos-delay="100">
+                        <div class="reason-card h-100 text-center p-4">
+                            <span class="reason-icon fs-1 d-block mb-3">🌍</span>
+                            <h3 class="h5 mb-3">Local Expertise, Global Standards</h3>
+                            <p class="mb-0">Deep understanding of Zimbabwean markets</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3" data-aos="flip-left" data-aos-delay="200">
+                        <div class="reason-card h-100 text-center p-4">
+                            <span class="reason-icon fs-1 d-block mb-3">🎯</span>
+                            <h3 class="h5 mb-3">Tailored Solutions</h3>
+                            <p class="mb-0">Bespoke strategies aligned with your business goals</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3" data-aos="flip-left" data-aos-delay="300">
+                        <div class="reason-card h-100 text-center p-4">
+                            <span class="reason-icon fs-1 d-block mb-3">⏱️</span>
+                            <h3 class="h5 mb-3">Efficiency Guaranteed</h3>
+                            <p class="mb-0">On-time delivery & measurable results</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3" data-aos="flip-left" data-aos-delay="400">
+                        <div class="reason-card h-100 text-center p-4">
+                            <span class="reason-icon fs-1 d-block mb-3">🚀</span>
+                            <h3 class="h5 mb-3">Future-Focused Innovation</h3>
+                            <p class="mb-0">Leveraging technology for sustainable impact</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="commitment" class="section-bg-alt commitment-section py-5" data-aos="fade-up">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-8 col-xl-6">
+                        <div class="commitment-card text-center p-4 p-md-5" data-aos="zoom-in">
+                            <span class="commitment-icon fs-1 d-block mb-4">💡</span>
+                            <h2 class="display-6 mb-4">Our Commitment</h2>
+                            <p class="lead mb-0">
+                                We transform data into decisions, complexity into clarity, and vision into value.<br>
+                                <strong>Partner with Tetenu Analytics to build a resilient, data-empowered future.</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Tetenu Analytics. Mt Pleasant, Harare, Zimbabwe. All rights reserved.</p>
+    <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2025 Tetenu Analytics. Mt Pleasant, Harare, Zimbabwe. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="js/main.js"></script>

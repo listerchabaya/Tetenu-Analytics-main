@@ -112,7 +112,7 @@ nav a:focus {
 
 main {
     max-width: 1200px;
-    margin: 100px auto 0 auto; /* Add top margin to avoid overlap with fixed header */
+    margin: 110px auto 0 auto; /* Adjust this value to match your header's height */
     padding: 30px 15px;
 }
 
