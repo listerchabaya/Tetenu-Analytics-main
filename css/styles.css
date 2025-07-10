@@ -1,0 +1,508 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(120deg, #91abf1 50%, #033b7a 80%);
+    color: #222;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    /* background: #007bff; */
+    color: #ffffff;
+    padding: 20px 0;
+    /* text-align: center; */
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.tagline {
+    font-size: 1.1em;
+    margin: 0 0 0 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #ffd700;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    white-space: nowrap;
+}
+
+nav {
+    margin-left: 32px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0 0 0;
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+}
+
+nav a {
+    color: #ffffff;
+    background: none;
+    border: none;
+    border-radius: 0;
+    padding: 8px 18px 6px 18px;
+    font-size: 1.08em;
+    font-weight: 600;
+    transition:
+        color 0.25s,
+        box-shadow 0.25s,
+        transform 0.18s;
+    box-shadow: none;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #007bff;
+    background: none;
+    box-shadow: 0 2px 0 #007bff;
+    transform: translateY(-2px) scale(1.06);
+    outline: none;
+}
+
+/* Modern, compact, fixed header */
+.hero {
+    background: linear-gradient(120deg, #033b7a 50%, #91abf1 80%);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 64px;
+    z-index: 1000;
+    box-shadow: 0 2px 12px rgba(21,101,192,0.13);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 0;
+    border-radius: 50%;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    background: #fff;
+    padding: 4px;
+    object-fit: contain;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.header-content > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 100px auto 0 auto; /* Add top margin to avoid overlap with fixed header */
+    padding: 30px 15px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.section-bg {
+    background: #eaf3fa;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    padding: 30px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.section-bg-alt {
+    background: #fffbe7;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    padding: 30px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.section-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.section-img {
+    width: 180px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.service-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+    cursor: pointer;
+}
+
+.service-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    background: #eaf3fa;
+}
+
+.service-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    background: #fff;
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.service-card img:hover {
+    transform: scale(1.08) rotate(-2deg);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+}
+
+.reasons-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.reasons-list li {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    padding-left: 25px;
+    position: relative;
+}
+
+.reasons-list li::before {
+    content: "✔️";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+footer {
+    background: linear-gradient(90deg, #1565c0 60%, #007bff 100%);
+    color: #fff;
+    text-align: center;
+    padding: 28px 0 18px 0;
+    margin-top: 40px;
+    font-size: 1.08em;
+    letter-spacing: 0.5px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    box-shadow: 0 -4px 24px rgba(21,101,192,0.10);
+    position: relative;
+    overflow: hidden;
+}
+
+footer p {
+    margin: 0;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+footer::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #ffd700, #1565c0, #ffd700);
+    background-size: 200% 100%;
+    animation: footer-bar 4s linear infinite;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+}
+
+@keyframes footer-bar {
+    0% { background-position: 0% 0; }
+    100% { background-position: 100% 0; }
+}
+
+#mission.section-bg {
+    background:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url('../assets/mission.jpg') center/cover no-repeat;
+    color: #fff;
+    position: relative;
+    padding: 80px 20px 80px 20px; /* Increase vertical padding */
+    min-height: 350px;            /* Ensure a larger section */
+    display: flex;
+    align-items: center;
+}
+
+#mission .section-content {
+    background: transparent;
+}
+
+#mission h2,
+#mission p {
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+#mission .section-img {
+    display: none;
+}
+
+.reasons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 28px;
+    margin-top: 28px;
+}
+
+.reason-card {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(0,123,255,0.07);
+    padding: 32px 18px 24px 18px;
+    text-align: center;
+    transition: transform 0.18s, box-shadow 0.18s;
+    border: 2px solid #eaf3fa;
+    position: relative;
+}
+
+.reason-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(0,123,255,0.13);
+    border-color: #ffd700;
+    background: #f7fbff;
+}
+
+.reason-icon {
+    font-size: 2.2em;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.reason-card h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.18em;
+    color: #007bff;
+}
+
+.reason-card p {
+    margin: 0;
+    color: #333;
+    font-size: 1em;
+}
+
+.commitment-section {
+    background: 
+        linear-gradient(120deg, #eaf3fa 60%, #fffbe7 100%),
+        url('https://www.transparenttextures.com/patterns/diamond-upholstery.png');
+    padding: 60px 0 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.commitment-card {
+    background: rgba(255,255,255,0.85);
+    border-radius: 18px;
+    box-shadow: 0 6px 32px rgba(0,123,255,0.09);
+    padding: 40px 32px 32px 32px;
+    max-width: 600px;
+    text-align: center;
+    margin: 0 16px;
+    border: 2px solid #eaf3fa;
+    position: relative;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.commitment-card:hover {
+    box-shadow: 0 12px 48px rgba(0,123,255,0.16);
+    transform: translateY(-4px) scale(1.02);
+    border-color: #ffd700;
+}
+
+.commitment-icon {
+    font-size: 2.5em;
+    display: block;
+    margin-bottom: 18px;
+    color: #ffd700;
+}
+
+.commitment-card h2 {
+    margin-top: 0;
+    color: #007bff;
+    font-size: 1.7em;
+}
+
+.commitment-card p {
+    color: #333;
+    font-size: 1.18em;
+    margin: 18px 0 0 0;
+    line-height: 1.6;
+}
+
+#services.section-bg-alt {
+    background:
+        linear-gradient(rgba(3, 19, 37, 0.65), rgba(3, 20, 37, 0.65)),
+        url('../assets/services.jpg') center/cover no-repeat;
+    color: #fff;
+    position: relative;
+}
+
+#services .service-card,
+#services h2 {
+    color: #fff;
+}
+
+#services .service-card {
+    background: rgba(255,255,255,0.12);
+    box-shadow: 0 4px 18px rgba(0,0,0,0.10);
+    border-radius: 16px;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+#services .service-card:hover {
+    background: rgba(255,255,255,0.22);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.16);
+}
+
+/* Add or update this CSS for the reasons section */
+
+#reasons.section-bg {
+    background:
+        linear-gradient(rgba(23, 93, 173, 0.65), rgba(20, 84, 153, 0.65)),
+        url('../assets/reason.jpg') center/cover no-repeat;
+    color: #fff;
+    position: relative;
+    padding: 80px 20px 80px 20px; /* Match mission/services size */
+    min-height: 350px;
+    border-radius: 12px;
+}
+
+#reasons h2,
+#reasons .reason-card,
+#reasons .reason-card h3,
+#reasons .reason-card p {
+    color: #fff;
+}
+
+#reasons .reason-card {
+    background: rgba(255,255,255,0.12);
+    box-shadow: 0 4px 18px rgba(0,0,0,0.10);
+    border-radius: 16px;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+#reasons .reason-card:hover {
+    background: rgba(255,255,255,0.22);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.16);
+}
+
+/* Commitment section: match background and size with mission, reason, and services */
+#commitment.section-bg-alt {
+    background:
+        linear-gradient(rgba(16, 79, 151, 0.65), rgba(22, 77, 134, 0.65)),
+        url('../assets/commitment.jpg') center/cover no-repeat;
+    color: #fff;
+    position: relative;
+    padding: 80px 20px 80px 20px; /* Match other sections */
+    min-height: 350px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#commitment .commitment-card,
+#commitment .commitment-card h2,
+#commitment .commitment-card p {
+    color: #fff;
+}
+
+#commitment .commitment-card {
+    background: rgba(255,255,255,0.12);
+    border-radius: 18px;
+    box-shadow: 0 6px 32px rgba(0,123,255,0.09);
+    padding: 40px 32px 32px 32px;
+    max-width: 600px;
+    text-align: center;
+    margin: 0 16px;
+    border: none;
+    position: relative;
+    transition: box-shadow 0.2s, transform 0.2s, background 0.2s;
+}
+
+#commitment .commitment-card:hover {
+    box-shadow: 0 12px 48px rgba(0,123,255,0.16);
+    transform: translateY(-4px) scale(1.02);
+    background: rgba(255,255,255,0.22);
+}
+
+#commitment .commitment-icon {
+    font-size: 2.5em;
+    display: block;
+    margin-bottom: 18px;
+    color: #ffd700;
+}
+
+@media (max-width: 800px) {
+    .section-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .section-img {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+    .header-content > div {
+        align-items: flex-start;
+    }
+    nav ul {
+        gap: 10px;
+    }
+}
+
+[data-aos] {
+    opacity: 0;
+    transition-property: opacity, transform;
+}
+
+[data-aos].aos-animate {
+    opacity: 1;
+}
