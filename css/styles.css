@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', Arial, sans-serif;
-    background: linear-gradient(120deg, #91abf1 50%, #033b7a 80%);
+    background: linear-gradient(120deg, #91abf1 40%, #033b7a 70%);
     color: #222;
     background-attachment: fixed;
     background-size: cover;
@@ -69,7 +69,7 @@ nav a:focus {
 
 /* Modern, compact, fixed header */
 .hero {
-    background: linear-gradient(120deg, #033b7a 50%, #91abf1 80%);
+    background: linear-gradient(120deg, #033b7a 40%, #91abf1 70%);
     color: #fff;
     display: flex;
     align-items: center;
