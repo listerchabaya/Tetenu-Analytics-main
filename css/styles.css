@@ -474,6 +474,187 @@ footer::before {
     color: #ffd700;
 }
 
+
+#contact.contact-split {
+    background: #0037ff12;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(21,101,192,0.07);
+    padding: 0 !important;
+    margin-bottom: 32px;
+}
+
+#contact .contact-info {
+    padding: 32px 24px 24px 32px;
+    font-size: 1.08em;
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    background: transparent;
+}
+
+#contact .contact-info .fw-bold {
+    font-size: 1.12em;
+    letter-spacing: 0.5px;
+    /* color: #273F4F; */
+    text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+
+#contact .contact-info .bi {
+    /* color: #273F4F; */
+    opacity: 1;
+}
+
+#contact .contact-form-box {
+    background: rgba(255, 255, 255, 0.32);
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(3, 59, 122, 0.18);
+    border: 1.5px solid rgba(255, 255, 255, 0.35);
+    padding: 36px 32px 28px 32px;
+    margin: 18px 0;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    transition: box-shadow 0.2s, border-color 0.2s, background 0.2s;
+}
+
+#contact .contact-form-box:hover {
+    box-shadow: 0 8px 32px rgba(21,101,192,0.14);
+    border-color: #91abf1;
+}
+
+#contact .contact-form-box h2 {
+    font-size: 1.35rem;
+    letter-spacing: 1px;
+    color: #003366;
+    margin-bottom: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+#contact .form-control {
+    font-size: 1.08em;
+    padding: 0.65rem 1rem;
+    border-radius: 8px;
+    border: 1.5px solid #c7d7e6;
+    margin-bottom: 1rem;
+    background: #f7faff;
+    color: #003366;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+#contact .form-control:focus {
+    border-color: #ffd700;
+    box-shadow: 0 0 0 2px #ffe066;
+    background: #fff;
+    color: #003366;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+#contact textarea.form-control {
+    min-height: 90px;
+    resize: vertical;
+}
+
+#contact .btn-contact {
+    background: linear-gradient(90deg, #033b7a 60%, #91abf1 100%);
+    color: #fff;
+    border: none;
+    border-radius: 22px;
+    padding: 0.65rem 0;
+    font-size: 1.08em;
+    font-weight: 600;
+    margin-top: 8px;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 8px rgba(0,123,255,0.08);
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+#contact .btn-contact:hover, #contact .btn-contact:focus {
+    background: linear-gradient(90deg, #033b7a 60%, #91abf1 100%);
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(0,123,255,0.13);
+}
+
+#contact .contact-form-box form {
+    margin-bottom: 0;
+}
+
+#contact .contact-form-box .form-control::placeholder {
+    color: #7a8ca3;
+    opacity: 1;
+    font-style: italic;
+}
+
+#contact .contact-form-box .d-grid {
+    margin-top: 0.5rem;
+}
+
+#contact .contact-info .mt-4 {
+    margin-top: 1.5rem !important;
+}
+
+#contact .contact-info a {
+    color: #fff !important;
+    opacity: 0.92;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: color 0.2s, transform 0.2s;
+}
+
+#contact .contact-info a:hover {
+    color: #ffd700 !important;
+    transform: scale(1.15);
+}
+
+#contact .contact-info .social-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 0;
+    margin-top: 1.2rem;
+    margin-bottom: 0;
+}
+
+/* Contact info card hover effect */
+#contact .contact-info {
+    transition: box-shadow 0.3s, background 0.3s, transform 0.3s;
+}
+#contact .contact-info:hover {
+    box-shadow: 0 8px 32px rgba(3, 59, 122, 0.18);
+    background: rgba(255,255,255,0.04);
+    transform: translateY(-3px) scale(1.02);
+}
+
+/* Social icons pop effect */
+#contact .contact-info .social-icons a {
+    transition: color 0.2s, transform 0.2s, box-shadow 0.2s;
+    box-shadow: none;
+}
+#contact .contact-info .social-icons a:hover {
+    color: #ffd700 !important;
+    transform: scale(1.22) rotate(-8deg);
+    box-shadow: 0 4px 16px rgba(255,215,0,0.18);
+}
+
+/* Form box shadow and scale on hover */
+#contact .contact-form-box {
+    transition: box-shadow 0.3s, background 0.3s, transform 0.3s, border-color 0.3s;
+}
+#contact .contact-form-box:hover {
+    box-shadow: 0 16px 48px rgba(0,123,255,0.18);
+    background: rgba(255,255,255,0.95);
+    transform: translateY(-4px) scale(1.015);
+    border-color: #ffd700;
+}
+
+/* Form fields focus effect */
+#contact .form-control:focus {
+    border-color: #ffd700;
+    box-shadow: 0 0 0 2px #ffe066;
+    background: #fff;
+    color: #003366;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
 @media (max-width: 800px) {
     .section-content {
         flex-direction: column;
@@ -495,6 +676,12 @@ footer::before {
     }
     nav ul {
         gap: 10px;
+    }
+    #contact .contact-info, #contact .contact-form-box {
+        padding: 18px 8px;
+    }
+    #contact .contact-form-box {
+        margin: 0;
     }
 }
 
