@@ -486,9 +486,14 @@ footer::before {
 #contact .contact-info {
     padding: 32px 24px 24px 32px;
     font-size: 1.08em;
-    color: #fff;
+    color: #273F4F;
     text-shadow: 0 2px 8px rgba(0,0,0,0.18);
     background: transparent;
+}
+
+#contact .contact-details {
+    color: #fff;
+    font-weight: 600;
 }
 
 #contact .contact-info .fw-bold {
