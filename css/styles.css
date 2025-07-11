@@ -69,7 +69,7 @@ nav a:focus {
 
 /* Modern, compact, fixed header */
 .hero {
-    background: linear-gradient(120deg, #033b7a 40%, #91abf1 70%);
+    background: linear-gradient(120deg, #033b7a 30%, #91abf1 60%);
     color: #fff;
     display: flex;
     align-items: center;
